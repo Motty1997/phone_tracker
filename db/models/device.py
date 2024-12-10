@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from db.models.location import Location
 
 
 @dataclass
@@ -7,4 +8,4 @@ class Device:
     brand: str
     model: str
     os: str
-    location: dict[str]
+    location: Location
